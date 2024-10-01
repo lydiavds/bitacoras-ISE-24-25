@@ -3,4 +3,5 @@
 #### email: lydiavands@correo.ugr.es
 ***
 # Bitácoras ISE 24-25
-## P1-L1 01/10/24
+## P1-L1 01/10/24:
+![imagen lsblk P1-L1](P1-L1.JPG)
