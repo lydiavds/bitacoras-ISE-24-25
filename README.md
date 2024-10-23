@@ -24,21 +24,31 @@
 ![imagen lsblk P2-L3](./img/lsblkP1L3.JPG)
 
 ### history al terminar la sesión
-Al reiniciar la máquina para comporbar el arranque, se han perdido varias instrucciones
+Al reiniciar la máquina para comprobar el arranque, se han perdido varias instrucciones
 
 ![imagen history2](./img/historyP1L3.JPG)
 
 ## P2_L1 22/10/24:
+### history de la sesión en:
 ## Ubuntu
 
-Desde maquina virtual
+Desde máquina virtual
 
-Desde anfitrion
+![imagen ubuntu1](./img/ubuntumv1P2_L1.JPG)
 
+
+Desde anfitrión
+
+
+![imagen ubuntu2](./img/ubuntuanfitrion2P2_L1.JPG)
 
 ## Rocky
-### history de la sesion
 
-En root maquina virtual
+En root máquina virtual
 
-Desde anfitrion
+![imagen rocky1](./img/rootrocky1P2_L1.JPG)
+
+Desde anfitrión
+
+![imagen rocky2](./img/rockyanfitrion3P2_L1.JPG)
+![imagen rocky3](./img/rockyanfitrion4P2_L1.JPG)
