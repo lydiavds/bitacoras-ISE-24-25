@@ -28,3 +28,17 @@ Al reiniciar la máquina para comporbar el arranque, se han perdido varias instr
 
 ![imagen history2](./img/historyP1L3.JPG)
 
+## P2_L1 22/10/24:
+## Ubuntu
+
+Desde maquina virtual
+
+Desde anfitrion
+
+
+## Rocky
+### history de la sesion
+
+En root maquina virtual
+
+Desde anfitrion
