@@ -51,4 +51,4 @@ En root máquina virtual
 Desde anfitrión
 
 ![imagen rocky2](./img/rockyanfitrion3P2_L1.JPG)
-![imagen rocky3](./img/rockyanfitrion4P2_L1.JPG)
+![imagen rocky3](./img/rockyanfitrion4P2_L1.JPG) 
