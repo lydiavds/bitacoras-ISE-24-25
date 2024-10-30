@@ -52,3 +52,20 @@ Desde anfitrión
 
 ![imagen rocky2](./img/rockyanfitrion3P2_L1.JPG)
 ![imagen rocky3](./img/rockyanfitrion4P2_L1.JPG) 
+
+
+## P2_L3 29/10/24:
+### history de la sesión en:
+## Ubuntu
+
+![imagen ubuntuP2_L3](./img/ubuntuP2_L3.JPG) 
+
+Prueba con xeyes para probar Xforwarding
+
+![imagen ubuntu2P2_L3](./img/xeyesP2_L3.JPG) 
+
+## Rocky
+
+![imagen rocky1P2_L3](./img/rocky1P2_L3.JPG) 
+![imagen rocky2P2_L3](./img/rocky2P2_L3.JPG)
+![imagen rocky3P2_L3](./img/rocky3P2_L3.JPG)
