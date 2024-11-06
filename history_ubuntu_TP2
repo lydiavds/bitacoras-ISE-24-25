@@ -1,0 +1,64 @@
+    1   06/ 11/ 24 10:15:04 cat ~/.ssh/id_rsa.pub
+    2   06/ 11/ 24 10:15:06 clear
+    3   06/ 11/ 24 10:15:13 ls
+    4   06/ 11/ 24 10:15:24 cd ../
+    5   06/ 11/ 24 10:15:25 ls
+    6   06/ 11/ 24 10:15:33 cd cursoGit/tp1
+    7   06/ 11/ 24 10:15:35 pwd
+    8   06/ 11/ 24 10:18:49 git remote -v
+    9   06/ 11/ 24 10:19:52 git remote add origin git@github.com:lydiavds/tp1.git
+   10   06/ 11/ 24 10:20:18 git branch
+   11   06/ 11/ 24 10:20:30 git push -u origin master
+   12   06/ 11/ 24 10:22:08 git pull
+   13   06/ 11/ 24 10:22:17 git log
+   14   06/ 11/ 24 10:22:29 clear
+   15   06/ 11/ 24 10:22:42 git status
+   16   06/ 11/ 24 10:23:18 vi Criptomoneda.java
+   17   06/ 11/ 24 10:23:29 ls
+   18   06/ 11/ 24 10:23:35 cd ..
+   19   06/ 11/ 24 10:23:37 ls
+   20   06/ 11/ 24 10:23:42 cd ..
+   21   06/ 11/ 24 10:23:42 ls
+   22   06/ 11/ 24 10:24:04 cd bitacoras-ISE-24-25
+   23   06/ 11/ 24 10:24:05 ls
+   24   06/ 11/ 24 10:24:15 cat history_ubuntuTP1
+   25   06/ 11/ 24 10:24:58 clear
+   26   06/ 11/ 24 10:25:00 cd ..
+   27   06/ 11/ 24 10:25:01 ls
+   28   06/ 11/ 24 10:25:08 cd cursoGit/tp1
+   29   06/ 11/ 24 10:25:09 ls
+   30   06/ 11/ 24 10:25:23 vi src/Criptomoneda.java
+   31   06/ 11/ 24 10:32:18 gi tlog
+   32   06/ 11/ 24 10:32:22 git log
+   33   06/ 11/ 24 10:32:30 git status
+   34   06/ 11/ 24 10:32:41 git add Criptomoneda.java
+   35   06/ 11/ 24 10:32:56 git add src/Criptomoneda.java
+   36   06/ 11/ 24 10:33:16 git commit -m "Agregar getters y setters"
+   37   06/ 11/ 24 10:33:22 git push 
+   38   06/ 11/ 24 10:42:38 cd ..
+   39   06/ 11/ 24 10:42:40 ls
+   40   06/ 11/ 24 10:42:52 git clone git@github.com:lydiavds/tp2.git
+   41   06/ 11/ 24 10:43:01 clear
+   42   06/ 11/ 24 10:43:01 ls
+   43   06/ 11/ 24 10:45:45 ls tp1
+   44   06/ 11/ 24 10:45:53 cp tp1 tp2
+   45   06/ 11/ 24 10:45:59 cp -r tp1 tp2
+   46   06/ 11/ 24 10:46:02 ls tp2
+   47   06/ 11/ 24 10:46:12 ls tp1
+   48   06/ 11/ 24 10:46:27 rmdir tp2/tp1
+   49   06/ 11/ 24 10:46:32 rmdir -r tp2/tp1
+   50   06/ 11/ 24 10:47:02 rm -rf tp2/tp1
+   51   06/ 11/ 24 10:47:06 ls tp2
+   52   06/ 11/ 24 10:49:33 cp -r tp1/* tp2
+   53   06/ 11/ 24 10:49:35 ls tp2
+   54   06/ 11/ 24 10:49:56 git add tp2
+   55   06/ 11/ 24 10:50:04 cd tp2
+   56   06/ 11/ 24 10:50:08 git add .
+   57   06/ 11/ 24 10:50:21 git commit -m "Copiado tp1 a tp2"
+   58   06/ 11/ 24 10:50:24 git commit
+   59   06/ 11/ 24 10:50:30 git push
+   60   06/ 11/ 24 10:50:37 cd ..
+   61   06/ 11/ 24 10:50:40 ls
+   62   06/ 11/ 24 10:50:48 cd bitacoras-ISE-24-25
+   63   06/ 11/ 24 10:50:50 ls
+   64   06/ 11/ 24 10:51:03 history | less > history_ubuntu_TP2
