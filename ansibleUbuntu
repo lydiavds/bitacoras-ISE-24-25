@@ -1,0 +1,12 @@
+    1  clear
+    2  ls
+    3  ansible --version
+    4  sudo vi /etc/ansible/hosts
+    5  vi playbook.yml
+    6  ansible-playbook playbook.yml
+    7  clear
+    8  vi playbook.yml
+    9  clear
+   10  sudo vi /etc/ansible/hosts
+   11  clear
+   12  history | less >> ansibleUbuntu
