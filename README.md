@@ -81,3 +81,62 @@ Prueba con xeyes para probar Xforwarding
 ## TP2
 
 ![history ubuntuTP2](history_ubuntu_TP2)
+
+<br>
+<br>
+
+## P3 12-19/11/24:
+## history de recuperación de disco duro en ubuntu + un poco de ansible
+
+![history ubuntuDD](history_inicio_p3)
+
+## Zabbix
+### history ubuntu (servidor zabbix)
+
+![history ubuntuzabbix](zabbixUbuntu)
+
+### history rocky (agente rocky)
+
+![history rockyzabbix](zabbixrocky)
+
+### Imágenes de monitorización de ubuntu, rocky y sus sshd y httpd
+
+![imagen zabbix1](./img/capturaZabbix1.JPG)
+
+![imagen zabbix4](./img/capturaZabbix4.JPG)
+
+![imagen zabbix2](./img/capturaZabbix2.JPG)
+
+![imagen zabbix3](./img/capturaZabbix3.JPG)
+
+## Ansible
+## Ubuntu
+
+### history
+
+![history ubuntuansible](ansibleUbuntu)
+
+### Su playbook 
+
+![history ubuntuplaybook](playbookU.yml)
+
+### La salida del playbook
+
+![history ubuntusalidapb](salidaAnsibleUbuntu)
+
+## Rocky
+
+### history
+
+![history rockyansible](ansiblerocky)
+
+### Su playbook
+
+![history rockyplaybook](playbook.yml)
+
+### La salida del playbook
+
+![history rockysalidapb](salidaAnsibleRocky)
+
+
+
