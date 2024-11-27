@@ -1,4 +1,3 @@
-
    89  sudo systemctl status zabbix-server
    90  ifconfig
    91  wget -qO- ifconfig.me
