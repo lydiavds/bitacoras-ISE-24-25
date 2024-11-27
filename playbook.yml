@@ -1,0 +1,56 @@
+---
+- name: Monitorizacion RAID1, ping a servidores y funcionamiento httpd
+  hosts: webservers
+  become: yes
+  tasks:
+        - name: Info SO
+          set_fact:
+            os_family: "{{ ansible_os_family }}"        
+
+        - name: Comprobar si se tiene utlima version de httpd y actualizarla si no se tiene en Rocky
+          ansible.builtin.yum:
+            name: httpd
+            state: latest
+          when: ansible_facts['os_family'] == "RedHat"
+
+        - name: Comprobar si se tiene la ultima version de apache2 y actualizarla si no se tiene en Ubuntu
+          ansible.builtin.apt:
+            name: apache2
+            state: latest
+          when: ansible_facts['os_family'] == "Debian"
+
+        - name: apache2 y httpd en ejecucion
+          ansible.builtin.service:
+            name: httpd
+            state: started
+            enabled: yes
+          when: ansible_facts['os_family'] == "RedHat"
+          ansible.builtin.service:
+            name: apache2
+            state: started
+            enabled: yes
+          when: ansible_facts['os_family'] == "Debian" 
+
+        - name: Verificar que funciona ping
+          ping:
+
+        - name: Hacer ping a servidores
+          command: ping -c 5 192.168.56.105
+
+        - name: Ejecutar /proc/mdstat
+          command: cat /proc/mdstat
+          register: mdstat_output
+
+        - name: Mostrar resultado /proc/mdstat
+          debug:
+            msg: "{{ mdstat_output.stdout }}"
+
+        - name: Problemas con el disco
+          fail:
+            msg: "Problemas con el disco"
+          when: "'UU' not in mdstat_output.stdout"
+
+        - name: Disco esta bien
+          debug:
+            msg: "No hay problemas con el disco"
+          when: "'UU' in mdstat_output.stdout"

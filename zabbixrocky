@@ -1,0 +1,18 @@
+    1 sudo vi /etc/yum.repos.d/epel.repo
+    2 rpm -Uvh https://repo.zabbix.com/zabbix/5.0/rhel/9/x86_64/zabbix-release-latest.el9.noarch.rpm
+    3 dnf clean all
+    4 dnf install zabbix-agent
+    5 systemctl restart zabbix-agent
+    6 systemctl enable zabbix-agent
+    7  clear
+    8  sudo firewall-cmd --list-all
+    9  sudo firewall-cmd --add-port=10050/tcp --permanent
+    10  sudo firewall-cmd --reload
+    11  sudo firewall-cmd --list-all
+    12  ls
+    13  sudo vi /etc/zabbix/zabbix_agentd.conf
+    14  cat history_descarga_zabbix_agente_rocky
+    15  vi history_descarga_zabbix_agente_rocky
+    16  clear
+    17  ls
+    18 history | less >> zabbixrocky
