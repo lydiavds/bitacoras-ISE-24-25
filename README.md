@@ -64,8 +64,20 @@ Prueba con xeyes para probar Xforwarding
 
 ![imagen ubuntu2P2_L3](./img/xeyesP2_L3.JPG) 
 
+
 ## Rocky
 
 ![imagen rocky1P2_L3](./img/rocky1P2_L3.JPG) 
 ![imagen rocky2P2_L3](./img/rocky2P2_L3.JPG)
 ![imagen rocky3P2_L3](./img/rocky3P2_L3.JPG)
+
+
+## P2_L2 5/11/24:
+### history de los TP1 y TP2 de las prácticas de git en ubuntu
+## TP1
+
+![history ubuntuTP1](history_ubuntu_TP1)
+
+## TP2
+
+![history ubuntuTP2](history_ubuntu_TP2)

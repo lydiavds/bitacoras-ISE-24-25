@@ -1,0 +1,33 @@
+    1  ansible --version
+    2  sudo vi /etc/ansible/hosts
+    3  ansible -m webservers ping
+    4  ansible -m all ping
+    5  ansible all ping
+    6  clear
+    7  ping 192.168.56.105
+    8  clear
+    9  sudo vi playbook.yml
+   10  ansible-playbook playbook.yml
+   11  sudo vi playbook.yml
+   12  sudo vi /etc/ansible/hosts
+   13  clear
+   14  ansible-playbook playbook.yml
+   15  clear
+   16  ansible-playbook playbook.yml
+   17  clear
+   18  cat .ssh/id_rsa.pub
+   19  sudo vi .ssh/authorized_keys
+   20  clear
+   21  ansible-playbook playbook.yml
+   22  clear
+   23  ls
+   24  history | less >> ansiblerocky
+   25  clear
+   26  ls
+   27  sudo vi playbook.yml
+   28  ansible-playbook playbook.yml -K
+   29  sudo vi playbook.yml
+   30  clear
+   31  ansible-playbook playbook.yml -K
+   32  sudo vi playbook.yml
+   33  history | less >> ansiblerocky

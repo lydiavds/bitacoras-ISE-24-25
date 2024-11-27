@@ -1,0 +1,56 @@
+
+PLAY [Monitorizacion RAID1, ping a servidores y funcionamiento httpd] **********
+
+TASK [Gathering Facts] *********************************************************
+ok: [192.168.56.110]
+ok: [192.168.56.105]
+
+TASK [Info SO] *****************************************************************
+ok: [192.168.56.110]
+ok: [192.168.56.105]
+
+TASK [Comprobar si se tiene utlima version de httpd y actualizarla si no se tiene en Rocky] ***
+skipping: [192.168.56.105]
+ok: [192.168.56.110]
+
+TASK [Comprobar si se tiene la ultima version de apache2 y actualizarla si no se tiene en Ubuntu] ***
+skipping: [192.168.56.110]
+ok: [192.168.56.105]
+
+TASK [apache2 y httpd en ejecucion] ********************************************
+skipping: [192.168.56.110]
+ok: [192.168.56.105]
+
+TASK [Verificar que funciona ping] *********************************************
+ok: [192.168.56.105]
+ok: [192.168.56.110]
+
+TASK [Hacer ping a servidores] *************************************************
+changed: [192.168.56.105]
+changed: [192.168.56.110]
+
+TASK [Ejecutar /proc/mdstat] ***************************************************
+changed: [192.168.56.105]
+changed: [192.168.56.110]
+
+TASK [Mostrar resultado /proc/mdstat] ******************************************
+ok: [192.168.56.110] => {
+    "msg": "Personalities : [raid1] \nmd127 : active raid1 sdc1[1] sdb1[0]\n      2094080 blocks super 1.2 [2/2] [UU]\n      \nunused devices: <none>"
+}
+ok: [192.168.56.105] => {
+    "msg": "Personalities : [raid1] [linear] [multipath] [raid0] [raid6] [raid5] [raid4] [raid10] \nmd0 : active raid1 sda2[1]\n      408576 blocks super 1.2 [2/1] [_U]\n      \nmd1 : active raid1 sda3[1]\n      12161024 blocks super 1.2 [2/1] [_U]\n      \nunused devices: <none>"
+}
+
+TASK [Problemas con el disco] **************************************************
+skipping: [192.168.56.110]
+fatal: [192.168.56.105]: FAILED! => {"changed": false, "msg": "Problemas con el disco"}
+
+TASK [Disco esta bien] *********************************************************
+ok: [192.168.56.110] => {
+    "msg": "No hay problemas con el disco"
+}
+
+PLAY RECAP *********************************************************************
+192.168.56.105             : ok=8    changed=2    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+192.168.56.110             : ok=8    changed=2    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+
