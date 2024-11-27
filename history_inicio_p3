@@ -1,0 +1,150 @@
+    1  exit
+    2  exit
+    3  clear
+    4  exit
+    5  clear
+    6  exit
+    7  clear
+    8  xeyes
+    9  sudo apt install x11-apps
+   10  xeyes
+   11  history | less
+   12  apt install git
+   13  sudo apt install git
+   14  clear
+   15  git clone git@github.com:juanluck/bitacoras-ISE-24-25.git
+   16  git@github.com:lydiavds/bitacoras-ISE-24-25.git
+   17  git clone git@github.com:lydiavds/bitacoras-ISE-24-25.git
+   18  git clone https://github.com/lydiavds/bitacoras-ISE-24-25.git
+   19  clear
+   20  la
+   21  ls
+   22  git config --list
+   23  git config --global user.name "Lydia"
+   24  git config --list
+   25  git config --global user.email e.lydiavands@go.ugr.es
+   26  git config --global core.editor vim
+   27  git config --list
+   28  git config user.name
+   29  git config user.email
+   30  mkdir cursoGit
+   31  mkdir cursoGit/tp1
+   32  ls
+   33  ls cursoGit
+   34  cd cursoGit/tp1
+   35  pwd
+   36  ls -a
+   37  git init
+   38  ls -a
+   39  git status
+   40  vi README.md
+   41  ls
+   42  git status
+   43  git add README.md
+   44  git status
+   45  git commit -m "Agrega el archivo README.md"
+   46  git status
+   47  clear
+   48  git log
+   49  vi README.md
+   50  clear
+   51  git add README.md
+   52  git commit -m "Modificado README.md"
+   53  git log
+   54  mkdir src
+   55  cd src
+   56  touch Criptomoneda.java
+   57  vi Criptomoneda.java
+   58  git add Criptomoneda.java
+   59  git commit -m "Primera versión del archivo Cryptomoneda.java"
+   60  gi tlog
+   61  git log
+   62  javac Criptomoneda.java
+   63  sudo apt install default-jdk
+   64  javac Criptomoneda.java
+   65  clear
+   66  git status
+   67  cd ..
+   68  touch .gitignore
+   69  git status
+   70  vi .gitignore
+   71  git add .gitignore
+   72  git commit -m ".gitignore añadido"
+   73  git status
+   74  vi .gitignore
+   75  git add .gitignore
+   76  git commit -m ".gitignore completado"
+   77  git status
+   78  clear
+   79  history | less
+   80  export PS1="[ \u@\h:\w ] \D{ %F} \t $ "
+   81  history > historyP2L2
+   82  git add historyP2L2
+   83  git commit
+   84  git commit -m "p1-l10"
+   85  git push
+   86  clear
+   87  quit
+   88  exit
+   89  clear
+   90  lscpu
+   91  cat /proc/mdstat
+   92  clear
+   93  cat /proc/mdstat
+   94  cat /var/log
+   95  ls /var/log
+   96  journalctl
+   97  clear
+   98  cat /proc/mdstat
+   99  lsblk
+  100  clear
+  101  sudo fdisk
+  102  sudo fdisk /dev/sdb
+  103  lsblk
+  104  sudo grub-install /dev/sdb
+  105  mdadm
+  106  sudo mdadm
+  107  sudo mdadm -a /dev/md0 /dev/sdb1
+  108  cat /proc/mdstat
+  109  sudo mdadm -a /dev/md1 /dev/sdb2
+  110  clear
+  111  tar xvfz mon-raid.tar.gz
+  112  ls
+  113  sudo apt install python
+  114  ls
+  115  vi mon-raid.py
+  116  python mon-raid.py
+  117  clear
+  118  la
+  119  vi mon_raid.tomer
+  120  vi mon_raid.timer
+  121  vi mon_raid.service
+  122  ls
+  123  cp mon-raid.*
+  124  ls
+  125  sudo cp mon-raid.* /etc/systemd/system
+  126  sudo systemctl status mon_raid.timer
+  127  sudo cp mon_raid.* /etc/systemd/system
+  128  sudo systemctl status mon_raid.timer
+  129  sudo systectl enable mon_raid.timer mon_raid.service
+  130  sudo systemctl enable mon_raid.timer mon_raid.service
+  131  ./mon-raid.py
+  132  sudo systemctl status mon_raid.timer
+  133  sudo apt install ansible
+  134  clear
+  135  cat etc/ansible/host
+  136  ls
+  137  ls etc
+  138  ls /etc
+  139  ls /etc/ansible
+  140  ls /etc/ansible/hosts
+  141  cat /etc/ansible/hosts
+  142  vi /etc/ansible/hosts
+  143  vi /etc/ansible/ansible.cfg
+  144  ansible all -a ping -u lydiavds
+  145  sudo vi /etc/ansible/hosts
+  146  ssh-copy-id -p 22022 lydiavds@192.168.56.105
+  147  sudo vi /etc/ansible/hosts
+  148  ansible all -a ping -u lydiavds
+  149  history | less
+  150  history | less > history_inicio_p3

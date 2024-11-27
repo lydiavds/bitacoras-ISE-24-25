@@ -10,3 +10,15 @@
    10  sudo vi /etc/ansible/hosts
    11  clear
    12  history | less >> ansibleUbuntu
+    1  clear
+    2  mv playbook.yml playbookU.yml
+    3  ls
+    4  history | less >> ansibleUbuntu
+    1  clear
+    2  ansible-playbook playbookU.yml -K
+    3  ls
+    4  ansible-playbook playbookU.yml -K >> ansibleUbuntu
+    5  ansible-playbook playbookU.yml -K >> salidaAnsibleUbuntu
+    6  cat ansibleUbuntu
+    7  cat salidaAnsibleUbuntu
+    8  history | less >> ansibleUbuntu
