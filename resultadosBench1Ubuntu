@@ -1,0 +1,51 @@
+    Evaluating External Test Dependencies ..........................................................................
+
+[1;32mPhoronix Test Suite v10.8.5[0m
+[1;32m[0m
+    [1mInstalled:[0m     pts/smallpt-1.2.1
+
+[1;32mSystem Information[0m
+
+
+[1mPROCESSOR[0m:                [1;32mIntel Core i5-1135G7[0m
+    [1mCore Count[0m:           2                                        
+    [1mExtensions[0m:           SSE 4.2 + AVX2 + AVX + RDRAND + FSGSBASE 
+    [1mCache Size[0m:           16 MB                                    
+    [1mCore Family[0m:          Tiger Lake                               
+
+[1mGRAPHICS[0m:                 [1;32mVMware SVGA II[0m
+    [1mVulkan[0m:               1.1.182          
+    [1mScreen[0m:               2048x2048        
+
+[1mMOTHERBOARD[0m:              [1;32mOracle VirtualBox v1.2[0m
+    [1mBIOS Version[0m:         VirtualBox                
+    [1mChipset[0m:              Intel 440FX 82441FX PMC   
+    [1mAudio[0m:                Intel 82801AA AC 97 Audio 
+    [1mNetwork[0m:              2 x Intel 82540EM         
+
+[1mMEMORY[0m:                   [1;32m1024MB[0m
+
+[1mDISK[0m:                     [1;32m2 x 13GB VBOX HDD[0m
+    [1mFile-System[0m:          ext4             
+    [1mMount Options[0m:        relatime rw      
+    [1mDisk Scheduler[0m:       MQ-DEADLINE      
+    [1mDisk Details[0m:         Block Size: 4096 
+
+[1mOPERATING SYSTEM[0m:         [1;32mUbuntu 20.04[0m
+    [1mKernel[0m:               5.4.0-200-generic (x86_64)                                                                                      
+    [1mCompiler[0m:             GCC 9.4.0                                                                                                       
+    [1mSystem Layer[0m:         Oracle VMware                                                                                                   
+    [1mSecurity[0m:             gather_data_sampling: Unknown: Dependent on hypervisor status                                                   
+    [1m [0m                     + itlb_multihit: Not affected                                                                                   
+    [1m [0m                     + l1tf: Not affected                                                                                            
+    [1m [0m                     + mds: Not affected                                                                                             
+    [1m [0m                     + meltdown: Not affected                                                                                        
+    [1m [0m                     + mmio_stale_data: Not affected                                                                                 
+    [1m [0m                     + retbleed: Not affected                                                                                        
+    [1m [0m                     + spec_store_bypass: Vulnerable                                                                                 
+    [1m [0m                     + spectre_v1: Mitigation of usercopy/swapgs barriers and __user pointer sanitization                            
+    [1m [0m                     + spectre_v2: Mitigation of Retpolines; STIBP: disabled; RSB filling; PBRSB-eIBRS: Not affected; BHI: Retpoline 
+    [1m [0m                     + srbds: Not affected                                                                                           
+    [1m [0m                     + tsx_async_abort: Not affected                                                                                 
+
+    [1mWould you like to save these test results (Y/n): [0m
