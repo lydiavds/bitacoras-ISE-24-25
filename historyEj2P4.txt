@@ -1,0 +1,22 @@
+1  git clone https://github.com/davidPalomar-ugr/iseP4JMeter.git
+    2  sudo apt-get update
+    3  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+    4  sudo add-apt-repository
+    5  "deb [arch=amd64] https://download.docker.com/linux/ubuntu
+    6  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu
+$(lsb_release -cs) stable"
+    7  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu
+$(lsb_release -cs) stable"
+    8  sudo apt update
+    9  apt search docker-ce
+   10  sudo apt install docker-ce
+   11  sudo usermod -aG docker lydiavds
+   12  docker info ; docker run hello-world
+   13  apt install docker-compose
+   14  sudo apt install docker-compose
+   15  docker-compose
+   16  docker-compose --version
+   17  ls
+   18  cat P4HiatoryEj2
+   19  cat P4HistoryEj2
+   20  history | less >> P4HistoryEj2

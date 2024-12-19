@@ -1,0 +1,46 @@
+history de da fallo de version y se ha hecho lo del firewall
+
+    1  docker-compose up
+    2  sudo systemctl docker
+    3  sudo systemctl status docker
+    4  docker-compose up -d
+    5  echo $DOCKER_HOST
+    6  docker ps
+    7  unset DOCKER_HOST
+    8  echo $DOCKER_HOST
+    9  docker-compose up -d
+   10  docker-compose --version
+   11  docker ps -a
+   12  docker container prune
+   13  docker image prune
+   14  ./pruebaEntorno.sh
+   15  sudo ./pruebaEntorno.sh
+   16  sudo netstat -tuln | grep 3000
+   17  sudo ufw status
+   18  sudo ufw allow 3000
+   19  sudo ufw status
+   20  docker-compose up -d
+   21  sudo ./pruebaEntorno.sh
+   22  history
+
+
+
+History de haber modificado el docker-compose.yml para que acepte la version que ya esta en el sistema
+    3  cd iseP4JMeter
+    4  ls
+    5  docker-compose up
+    6  docker-compose --version
+    7  docker version
+    8  ls
+    9  sudo vi docker-compose.yml
+   10  docker-compose down
+   11  docker system prune -a
+   12  docker-compose up
+   13  sudo systemctl restart docker
+   14  docker-compose up
+   15  sudo vi docker-compose.yml
+   16  docker-compose up
+   17  sudo vi docker-compose.yml
+   18  docker-compose up
+
+//Aqui se tomo el pantallazo donde dice que no hay espacio
