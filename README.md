@@ -155,7 +155,7 @@ Prueba con xeyes para probar Xforwarding
 Al hacer docker-compose up no habia suficente espacio:
 ![imagen dockerUbuntuimg](./img/DockerNoEspacio.JPG)
 Para que tuviese espacio:
-![history dockerUbuntu3](añadirEspacioUbuntu_server.txt)
+![history dockerUbuntu3](masEspacioUbuntu_server.txt)
 
 Ahora, al hacer docker-compose up
 ![history dockerUbuntu4](HacerDockerComposeUp.txt)
