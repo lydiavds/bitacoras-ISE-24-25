@@ -149,13 +149,13 @@ Prueba con xeyes para probar Xforwarding
 ![resultadosBench2](resultadosBench2Ubuntu)
 
 ## Docker en Ubuntu
-![history dockerUbuntu1](historyEj2P4)
-![history dockerUbuntu2](historyEj2P4parte2)
+![history dockerUbuntu1](historyEj2P4.txt)
+![history dockerUbuntu2](historyEj2P4parte2.txt)
 
 Al hacer docker-compose up no habia suficente espacio:
 ![imagen dockerUbuntuimg](./img/DockerNoEspacio.JPG)
 Para que tuviese espacio:
-![history dockerUbuntu3](añadirEspacioUbuntu_server)
+![history dockerUbuntu3](añadirEspacioUbuntu_server.txt)
 
 Ahora, al hacer docker-compose up
-![history dockerUbuntu4](HacerDockerComposeUp)
+![history dockerUbuntu4](HacerDockerComposeUp.txt)
