@@ -138,5 +138,24 @@ Prueba con xeyes para probar Xforwarding
 
 ![history rockysalidapb](salidaAnsibleRocky)
 
+## P4 26/11/24-3/12/24:
 
+## Benchmarks con Phoronix en Ubuntu
+### Parte del history
+![history benchmarksUbuntu](historyP4UbuntuEj1)
 
+### Resultados de los Benchmark
+![resultadosBench1](resultadosBench1Ubuntu)
+![resultadosBench2](resultadosBench2Ubuntu)
+
+## Docker en Ubuntu
+![history dockerUbuntu1](historyEj2P4)
+![history dockerUbuntu2](historyEj2P4parte2)
+
+Al hacer docker-compose up no habia suficente espacio:
+![imagen dockerUbuntuimg](./img/DockerNoEspacio.JPG)
+Para que tuviese espacio:
+![history dockerUbuntu3](añadirEspacioUbuntu_server)
+
+Ahora, al hacer docker-compose up
+![history dockerUbuntu4](HacerDockerComposeUp)
