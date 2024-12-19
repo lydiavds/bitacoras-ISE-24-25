@@ -1,0 +1,166 @@
+ESTO ES CUANDO SE HA AÑADIDO EL NUEVO DISCO
+
+lydiavds@ubuntu:~$ ls
+P3discoyzabbix  ansibleubuntu  historyP4UbuntuEj1  iseP4JMeter             resultadosBench2Ubuntu
+P4HistoryEj2    history        hola                resultadosBench1Ubuntu
+lydiavds@ubuntu:~$ lsblk
+NAME                  MAJ:MIN RM  SIZE RO TYPE  MOUNTPOINT
+loop0                   7:0    0 55.4M  1 loop  /snap/core18/2846
+loop1                   7:1    0 63.7M  1 loop  /snap/core20/2434
+loop2                   7:2    0   64M  1 loop  /snap/core20/2379
+loop3                   7:3    0   55M  1 loop  /snap/core18/1880
+loop4                   7:4    0 38.8M  1 loop  /snap/snapd/21759
+loop5                   7:5    0 71.3M  1 loop  /snap/lxd/16099
+loop6                   7:6    0 44.3M  1 loop  /snap/snapd/23258
+loop7                   7:7    0 91.9M  1 loop  /snap/lxd/29619
+sda                     8:0    0   12G  0 disk
+├─sda1                  8:1    0    1M  0 part
+├─sda2                  8:2    0  400M  0 part
+│ └─md0                 9:0    0  399M  0 raid1
+│   └─md0p1           259:0    0  394M  0 part  /boot
+└─sda3                  8:3    0 11.6G  0 part
+  └─md1                 9:1    0 11.6G  0 raid1
+    └─dm_crypt-0      253:0    0 11.6G  0 crypt
+      ├─vgraid1-swap  253:1    0    1G  0 lvm   [SWAP]
+      ├─vgraid1-hogar 253:2    0  500M  0 lvm   /home
+      └─vgraid1-raiz  253:3    0 10.1G  0 lvm   /
+sdb                     8:16   0   12G  0 disk
+├─sdb1                  8:17   0  400M  0 part
+└─sdb2                  8:18   0 11.6G  0 part
+sdc                     8:32   0 20.6G  0 disk
+sr0                    11:0    1 1024M  0 rom
+lydiavds@ubuntu:~$ fdisk /dev/sdc
+
+Welcome to fdisk (util-linux 2.34).
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+
+fdisk: cannot open /dev/sdc: Permission denied
+lydiavds@ubuntu:~$ sudo fdisk /dev/sdc
+[sudo] password for lydiavds:
+
+Welcome to fdisk (util-linux 2.34).
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+
+Device does not contain a recognized partition table.
+Created a new DOS disklabel with disk identifier 0xd07702de.
+
+Command (m for help): n
+Partition type
+   p   primary (0 primary, 0 extended, 4 free)
+   e   extended (container for logical partitions)
+Select (default p):
+Value out of range.
+   p   primary (0 primary, 0 extended, 4 free)
+   e   extended (container for logical partitions)
+Select (default p): p
+Partition number (1-4, default 1):
+First sector (2048-43087775, default 2048):
+Last sector, +/-sectors or +/-size{K,M,G,T,P} (2048-43087775, default 43087775):
+
+Created a new partition 1 of type 'Linux' and of size 20.6 GiB.
+
+Command (m for help): w
+The partition table has been altered.
+Calling ioctl() to re-read partition table.
+Syncing disks.
+
+lydiavds@ubuntu:~$ lsblk
+NAME                  MAJ:MIN RM  SIZE RO TYPE  MOUNTPOINT
+loop0                   7:0    0 55.4M  1 loop  /snap/core18/2846
+loop1                   7:1    0 63.7M  1 loop  /snap/core20/2434
+loop2                   7:2    0   64M  1 loop  /snap/core20/2379
+loop3                   7:3    0   55M  1 loop  /snap/core18/1880
+loop4                   7:4    0 38.8M  1 loop  /snap/snapd/21759
+loop5                   7:5    0 71.3M  1 loop  /snap/lxd/16099
+loop6                   7:6    0 44.3M  1 loop  /snap/snapd/23258
+loop7                   7:7    0 91.9M  1 loop  /snap/lxd/29619
+sda                     8:0    0   12G  0 disk
+├─sda1                  8:1    0    1M  0 part
+├─sda2                  8:2    0  400M  0 part
+│ └─md0                 9:0    0  399M  0 raid1
+│   └─md0p1           259:0    0  394M  0 part  /boot
+└─sda3                  8:3    0 11.6G  0 part
+  └─md1                 9:1    0 11.6G  0 raid1
+    └─dm_crypt-0      253:0    0 11.6G  0 crypt
+      ├─vgraid1-swap  253:1    0    1G  0 lvm   [SWAP]
+      ├─vgraid1-hogar 253:2    0  500M  0 lvm   /home
+      └─vgraid1-raiz  253:3    0 10.1G  0 lvm   /
+sdb                     8:16   0   12G  0 disk
+├─sdb1                  8:17   0  400M  0 part
+└─sdb2                  8:18   0 11.6G  0 part
+sdc                     8:32   0 20.6G  0 disk
+└─sdc1                  8:33   0 20.6G  0 part
+sr0                    11:0    1 1024M  0 rom
+lydiavds@ubuntu:~$ pvs
+  WARNING: Running as a non-root user. Functionality may be unavailable.
+  /run/lock/lvm/P_global:aux: open failed: Permission denied
+lydiavds@ubuntu:~$ sudo pvs
+  PV                     VG      Fmt  Attr PSize   PFree
+  /dev/mapper/dm_crypt-0 vgraid1 lvm2 a--  <11.58g    0
+lydiavds@ubuntu:~$ sudo vgextend vgraid1 /dev/sdc1
+  Physical volume "/dev/sdc1" successfully created.
+  Volume group "vgraid1" successfully extended
+lydiavds@ubuntu:~$ ls
+P3discoyzabbix  ansibleubuntu  historyP4UbuntuEj1  iseP4JMeter             resultadosBench2Ubuntu
+P4HistoryEj2    history        hola                resultadosBench1Ubuntu
+lydiavds@ubuntu:~$ cd iseP4HMeter
+-bash: cd: iseP4HMeter: No such file or directory
+lydiavds@ubuntu:~$ cd iseP4JMeter
+lydiavds@ubuntu:~/iseP4JMeter$ docker-compose up
+Building nodejs
+Step 1/8 : FROM node:16.13.0-stretch
+16.13.0-stretch: Pulling from library/node
+200cae5c9d88: Pull complete
+047156b8adaf: Pull complete
+e3cbf304dd51: Pull complete
+cd6e9db633dd: Extracting [==================================================>]  49.76MB/49.76MB
+16c1fa47fbff: Download complete
+fdf15e489cee: Download complete
+a792262e6c5e: Download complete
+452c56414df1: Download complete
+e36ca80016b1: Download complete
+ERROR: Service 'nodejs' failed to build: failed to register layer: write /usr/lib/python2.7/smtplib.pyc: no space left on device
+
+
+
+QUEDA MONTAR EL SISTEMA DE ARCHIVOS Y ESO, SEGURI LO QUE DICE EL CGPT E INTENTAR EL DOCKER DE NUEVO
+
+
+No se podia montar el sistema de archivos porque ya estaba el otro lv, por eso, se ha hecho un extend del lv (en este caso de raiz) para contener mas espacio
+
+lydiavds@ubuntu:~$ sudo vgdisplay
+  --- Volume group ---
+  VG Name               vgraid1
+  System ID
+  Format                lvm2
+  Metadata Areas        2
+  Metadata Sequence No  5
+  VG Access             read/write
+  VG Status             resizable
+  MAX LV                0
+  Cur LV                3
+  Open LV               3
+  Max PV                0
+  Cur PV                2
+  Act PV                2
+  VG Size               32.12 GiB
+  PE Size               4.00 MiB
+  Total PE              8223
+  Alloc PE / Size       2964 / <11.58 GiB
+  Free  PE / Size       5259 / 20.54 GiB
+  VG UUID               uXKOXG-rzE7-NV5P-kjvU-V2Z3-sjPe-XAbf2G
+
+lydiavds@ubuntu:~$ sudo lvextend -L 20.54G /dev/vgraid1/raiz
+  Rounding size to boundary between physical extents: 20.54 GiB.
+  Size of logical volume vgraid1/raiz changed from <10.09 GiB (2583 extents) to 20.54 GiB (5259 extents).
+  Logical volume vgraid1/raiz successfully resized.
+
+y se hace esto para extender el sistema de archivos para usar el nuevo espacio del nuevo disco
+
+lydiavds@ubuntu:~$ sudo resize2fs /dev/vgraid1/raiz
+resize2fs 1.45.5 (07-Jan-2020)
+Filesystem at /dev/vgraid1/raiz is mounted on /; on-line resizing required
+old_desc_blocks = 2, new_desc_blocks = 3
+The filesystem on /dev/vgraid1/raiz is now 5385216 (4k) blocks long.
